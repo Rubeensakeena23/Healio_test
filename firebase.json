@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "build",
+    "public": "build/Healio_frontend",
     "ignore": [
       "firebase.json",
       "**/.*",
