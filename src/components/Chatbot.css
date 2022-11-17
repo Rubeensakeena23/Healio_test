@@ -10,9 +10,9 @@
     background-image: url(../assets/cubes.png);
 } */
 
-/* .col-10{
-    max-width: 85%;
-} */
+.row{
+    width: 100%;
+}
 
 
 .circleBtn{
@@ -35,6 +35,20 @@
     border: none;
     padding-left: 10px;
     background-color: white;
+}
+
+.input-area{
+    width: 85%;
+}
+
+.send-btn{
+    margin-left: 1.6rem;
+}
+
+.annoyance{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 .cola{

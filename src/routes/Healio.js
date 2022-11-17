@@ -1,12 +1,15 @@
 import React from "react";
 import Chatbot from "../components/Chatbot";
 import './Healio.css'
+import Navbar from '../components/Navbar'
 
 function Healio(){
-    return <div style={{backgroundColor: 'white'}}>
-        <h1 style={{color: 'black', textAlign: 'center'}}><b>Healio</b></h1>
-        <Chatbot />
-    </div>;
+    return (
+    <div>
+    <Navbar />
+    <Chatbot />
+    </div>
+    )
 }
 
 export default Healio

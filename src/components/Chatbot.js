@@ -92,13 +92,15 @@ function Healio(){
     const styleFooter = {
         // maxWidth : '32rem',
         borderRadius: '0px 0px 30px 30px',
-        backgroundColor: '#F2D1D1'
+        backgroundColor: '#F2D1D1',
+        display: 'flex'
     }
     const styleBody = {
         paddingTop : '10px',
-        height: '28rem',
+        height: '23rem',
         overflowY: 'a',
         overflowX: 'hidden',
+        backgroundColor: 'white'
     }
 
     return (
@@ -107,7 +109,8 @@ function Healio(){
         
 
         <div className="container">
-        <div className="row justify-content-center">
+        <div className="row justify-content-center"   style={{marginTop: '70px'}}>
+        <h1 style={{color: 'white', textAlign: 'center', marginBottom: '5px'}}><b>Healio</b></h1>
             
                 <div className="card" style={stylecard}>
                     <div className="cardHeader text-white" style={styleHeader}>
@@ -119,7 +122,7 @@ function Healio(){
                     </div>
                     <div className="cardBody" id="messageArea" style={styleBody}>
                         
-                        <div className="row msgarea">
+                        <div className="row msgarea" style={{fontSize: '1.5rem'}}>
                             {chat.map((user,key) => (
                                 <div key={key}>
                                     {user.sender==='bot' ?
@@ -146,11 +149,13 @@ function Healio(){
                     <div className="cardFooter text-white" style={styleFooter}>
                         <div className="row">
                             <form onSubmit={handleSubmit}>
-                                <div className="col-10" style={{paddingRight:'0px'}}>
-                                    <input onChange={e => setInputMessage(e.target.value)} value={inputMessage} type="text" className="msginp"></input>
-                                </div>
-                                <div className="col-2 cola">
-                                    <button type="submit" className="circleBtn" ><BiSend className="sendBtn" /></button>
+                                <div className='annoyance'>
+                                    <div className="input-area" style={{paddingRight:'0px'}}>
+                                        <input onChange={e => setInputMessage(e.target.value)} value={inputMessage} type="text" className="msginp"></input>
+                                    </div>
+                                    <div className="send-btn cola">
+                                        <button type="submit" className="circleBtn" ><BiSend className="sendBtn" /></button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
