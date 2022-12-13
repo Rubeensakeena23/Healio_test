@@ -23,7 +23,7 @@ const Footer = () => {
             <div className='right'>
                 <h4>About the company</h4>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Healio aims to provide it's users mental health assistance with a technology that leverages Artificial Intelligence.  
                 </p>
                 <div className='social'>
                     <FaFacebook size={30} style={{color: 'white', marginRight: '1rem'}} />
